@@ -1,0 +1,15 @@
+
+spring:
+  application:
+    name: movie-recommendation
+  config:
+    import: optional:file:.env[.properties]
+  ai:
+    openai:
+      api-key: ${API_KEY}
+      base-url: https://openrouter.ai/api/v1
+      embedding:
+        model: nvidia/nemotron-3-embed-1b:free
+#        options:
+#          model: nvidia/nemotron-3-embed-1b:free
+
